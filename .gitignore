@@ -30,3 +30,11 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Local tooling and assistant configuration
+.agents/
+.codex/
+.claude/
+.cursor/
+AGENTS.md
+CLAUDE.md
