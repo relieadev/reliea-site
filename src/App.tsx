@@ -1,18 +1,36 @@
+import { useState } from "react";
+import "./App.css"
+
 function Header() {
   const websiteName = "Reliea's Website";
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return(
-      <header>
-      <h1>{websiteName}</h1>
-      <p>Reliea's introduction site</p>
+      <header className="hp-header">
+        <a className="brand" href="/">
+          {websiteName}
+        </a>
+        
+        <p>Reliea's introduction site</p>
 
-      <nav className="hpNav">
-        <a href="/introduction">Introduction</a>
-        <a href="/work">Work</a>
-        <a href="study-logs">StudyLogs</a>
-        <a href="blog">Blog</a>
-        <a href="Playground">Playground</a>
-      </nav>
+        <button
+          className="menu-button"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-expanded={menuOpen}
+          aria-label="Menu"
+        >
+          
+          ☰
+        
+        </button>
+
+        <nav className={'hp-nav ${menuOpen ? "is-Open" : ""}'}>
+          <a href="/introduction">Introduction</a>
+          <a href="/work">Work</a>
+          <a href="study-logs">StudyLogs</a>
+          <a href="blog">Blog</a>
+          <a href="playground">Playground</a>
+        </nav>
       </header>
   )
 }
@@ -20,7 +38,7 @@ function Header() {
 function Footer() {
 
   return(
-    <footer>
+    <footer className="hp-footer">
       <p>©︎ 2026 Reliea Introduced-page</p>
     </footer>
   )
@@ -29,8 +47,13 @@ function Footer() {
 function App() {
 
   return(
-    <main>
+    <main className="hp-main">
       <Header />
+
+      <section className="hp-content">
+        <h1>Welcome to Reliea's Website</h1>
+        <p>Build, Learn, and Explore.</p>
+      </section>
 
       <Footer />
     </main>
