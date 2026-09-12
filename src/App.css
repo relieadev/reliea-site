@@ -1,29 +1,29 @@
 :root {
-    /* Colors */
-    --color-bg: #ffffff;
-    --color-text: #111827;
-    --color-text-muted: #6b7280;
-    --color-border: #e5e7eb;
-    --color-primary: #2563eb;
-    --color-header: #87ceeb;
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-text: #111827;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-primary: #2563eb;
+  --color-header: #87ceeb;
 
-    /* Typography */
-    --font-size-sm: 14px;
-    --font-size-base: 16px;
-    --font-size-lg: 20px;
-    --font-size-xl: 24px;
-    --font-size-2xl: 32px;
+  /* Typography */
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
 
-    /* Spacing */
-    --space-4px: 4px;
-    --space-8px: 8px;
-    --space-12px: 12px;
-    --space-16px: 16px;
-    --space-24px: 24px;
-    --space-32px: 32px;
-    --space-48px: 48px;
-    --space-64px: 64px;
-    --space-96px: 96px;
+  /* Spacing */
+  --space-4px: 4px;
+  --space-8px: 8px;
+  --space-12px: 12px;
+  --space-16px: 16px;
+  --space-24px: 24px;
+  --space-32px: 32px;
+  --space-48px: 48px;
+  --space-64px: 64px;
+  --space-96px: 96px;
 }
 
 /* ------------------------------
@@ -33,30 +33,30 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body,
 #root {
-    width: 100%;
-    min-height: 100%;
+  width: 100%;
+  min-height: 100%;
 }
 
 body {
-    margin: 0;
-    color: var(--color-text);
-    background-color: var(--color-bg);
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 /* ------------------------------
@@ -64,12 +64,12 @@ a {
 ------------------------------ */
 
 .hp-main {
-    /* 1. Layout */
-    display: flex;
-    flex-direction: column;
+  /* 1. Layout */
+  display: flex;
+  flex-direction: column;
 
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 /* ------------------------------
@@ -77,41 +77,41 @@ a {
 ------------------------------ */
 
 .hp-header {
-    /* 1. Layout */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  /* 1. Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    width: 100%;
-    min-height: var(--space-96px);
+  width: 100%;
+  min-height: var(--space-96px);
 
-    /* 2. Spacing */
-    padding-inline: var(--space-48px);
+  /* 2. Spacing */
+  padding-inline: var(--space-48px);
 
-    /* 3. Text */
-    color: var(--color-text);
+  /* 3. Text */
+  color: var(--color-text);
 
-    /* 4. Style */
-    background-color: var(--color-header);
-    border-bottom: 1px solid var(--color-border);
+  /* 4. Style */
+  background-color: var(--color-header);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .hp-header-brand {
-    /* 1. Layout */
-    display: flex;
-    align-items: center;
+  /* 1. Layout */
+  display: flex;
+  align-items: center;
 
-    /* 2. Spacing */
-    gap: var(--space-24px);
+  /* 2. Spacing */
+  gap: var(--space-24px);
 }
 
 .hp-header-brand p {
-    /* 2. Spacing */
-    margin: 0;
+  /* 2. Spacing */
+  margin: 0;
 
-    /* 3. Text */
-    color: var(--color-text);
-    font-size: var(--font-size-base);
+  /* 3. Text */
+  color: var(--color-text);
+  font-size: var(--font-size-base);
 }
 
 /* ------------------------------
@@ -119,12 +119,12 @@ a {
 ------------------------------ */
 
 .brand {
-    /* 3. Text */
-    color: var(--color-text);
-    font-size: var(--font-size-2xl);
-    font-weight: 700;
-    text-decoration: none;
-    white-space: nowrap;
+  /* 3. Text */
+  color: var(--color-text);
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 /* ------------------------------
@@ -132,24 +132,24 @@ a {
 ------------------------------ */
 
 .hp-nav {
-    /* 1. Layout */
-    display: flex;
-    align-items: center;
+  /* 1. Layout */
+  display: flex;
+  align-items: center;
 
-    /* 2. Spacing */
-    gap: var(--space-24px);
+  /* 2. Spacing */
+  gap: var(--space-24px);
 }
 
 .hp-nav a {
-    /* 3. Text */
-    color: var(--color-text);
-    font-size: var(--font-size-base);
-    text-decoration: none;
-    white-space: nowrap;
+  /* 3. Text */
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .hp-nav a:hover {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 /* ------------------------------
@@ -157,20 +157,20 @@ a {
 ------------------------------ */
 
 .menu-button {
-    /* 1. Layout */
-    display: none;
+  /* 1. Layout */
+  display: none;
 
-    /* 2. Spacing */
-    padding: var(--space-8px);
+  /* 2. Spacing */
+  padding: var(--space-8px);
 
-    /* 3. Text */
-    color: var(--color-text);
-    font-size: var(--font-size-xl);
+  /* 3. Text */
+  color: var(--color-text);
+  font-size: var(--font-size-xl);
 
-    /* 4. Style */
-    background: transparent;
-    border: 0;
-    cursor: pointer;
+  /* 4. Style */
+  background: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 /* ------------------------------
@@ -178,30 +178,30 @@ a {
 ------------------------------ */
 
 .hp-hero {
-    /* 1. Layout */
-    flex: 1;
-    width: 100%;
+  /* 1. Layout */
+  flex: 1;
+  width: 100%;
 
-    /* 2. Spacing */
-    padding-block: var(--space-96px);
-    padding-inline: var(--space-48px);
+  /* 2. Spacing */
+  padding-block: var(--space-96px);
+  padding-inline: var(--space-48px);
 }
 
 .hp-hero h1 {
-    /* 2. Spacing */
-    margin-top: 0;
-    margin-bottom: var(--space-24px);
+  /* 2. Spacing */
+  margin-top: 0;
+  margin-bottom: var(--space-24px);
 
-    /* 3. Text */
-    font-size: var(--font-size-2xl);
+  /* 3. Text */
+  font-size: var(--font-size-2xl);
 }
 
 .hp-hero p {
-    /* 2. Spacing */
-    margin: 0;
+  /* 2. Spacing */
+  margin: 0;
 
-    /* 3. Text */
-    font-size: var(--font-size-base);
+  /* 3. Text */
+  font-size: var(--font-size-base);
 }
 
 /* ------------------------------
@@ -209,22 +209,22 @@ a {
 ------------------------------ */
 
 .hp-footer {
-    /* 1. Layout */
-    width: 100%;
+  /* 1. Layout */
+  width: 100%;
 
-    /* 2. Spacing */
-    padding-block: var(--space-24px);
-    padding-inline: var(--space-48px);
+  /* 2. Spacing */
+  padding-block: var(--space-24px);
+  padding-inline: var(--space-48px);
 
-    /* 3. Text */
-    color: var(--color-text);
+  /* 3. Text */
+  color: var(--color-text);
 
-    /* 4. Style */
-    background-color: var(--color-header);
+  /* 4. Style */
+  background-color: var(--color-header);
 }
 
 .hp-footer p {
-    margin: 0;
+  margin: 0;
 }
 
 /* ------------------------------
@@ -232,54 +232,54 @@ a {
 ------------------------------ */
 
 @media (max-width: 1000px) {
-    .hp-header {
-        /* 1. Layout */
-        position: relative;
+  .hp-header {
+    /* 1. Layout */
+    position: relative;
 
-        /* 2. Spacing */
-        padding-inline: var(--space-32px);
-    }
+    /* 2. Spacing */
+    padding-inline: var(--space-32px);
+  }
 
-    .hp-header-brand p {
-        display: none;
-    }
+  .hp-header-brand p {
+    display: none;
+  }
 
-    .menu-button {
-        display: block;
-    }
+  .menu-button {
+    display: block;
+  }
 
-    .hp-nav {
-        /* 1. Layout */
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
+  .hp-nav {
+    /* 1. Layout */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
 
-        position: absolute;
-        top: 100%;
-        left: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
 
-        width: 100%;
+    width: 100%;
 
-        /* 2. Spacing */
-        gap: var(--space-16px);
-        padding: var(--space-24px) var(--space-32px);
+    /* 2. Spacing */
+    gap: var(--space-16px);
+    padding: var(--space-24px) var(--space-32px);
 
-        /* 4. Style */
-        background-color: var(--color-bg);
-        border-bottom: 1px solid var(--color-border);
-    }
+    /* 4. Style */
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
 
-    .hp-nav.is-open {
-        display: flex;
-    }
+  .hp-nav.is-open {
+    display: flex;
+  }
 
-    .hp-hero {
-        padding-inline: var(--space-32px);
-    }
+  .hp-hero {
+    padding-inline: var(--space-32px);
+  }
 
-    .hp-footer {
-        padding-inline: var(--space-32px);
-    }
+  .hp-footer {
+    padding-inline: var(--space-32px);
+  }
 }
 
 /* ------------------------------
@@ -287,29 +287,29 @@ a {
 ------------------------------ */
 
 @media (max-width: 600px) {
-    .hp-header {
-        min-height: var(--space-64px);
-        padding-inline: var(--space-16px);
-    }
+  .hp-header {
+    min-height: var(--space-64px);
+    padding-inline: var(--space-16px);
+  }
 
-    .brand {
-        font-size: var(--font-size-xl);
-    }
+  .brand {
+    font-size: var(--font-size-xl);
+  }
 
-    .hp-nav {
-        padding-inline: var(--space-16px);
-    }
+  .hp-nav {
+    padding-inline: var(--space-16px);
+  }
 
-    .hp-hero {
-        padding-block: var(--space-64px);
-        padding-inline: var(--space-16px);
-    }
+  .hp-hero {
+    padding-block: var(--space-64px);
+    padding-inline: var(--space-16px);
+  }
 
-    .hp-hero h1 {
-        font-size: var(--font-size-xl);
-    }
+  .hp-hero h1 {
+    font-size: var(--font-size-xl);
+  }
 
-    .hp-footer {
-        padding-inline: var(--space-16px);
-    }
+  .hp-footer {
+    padding-inline: var(--space-16px);
+  }
 }
