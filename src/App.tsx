@@ -43,11 +43,31 @@ function Footer() {
   );
 }
 
+function ImagePlaceholder() {
+  return(
+    <div className="image-placeholder">
+      <div className="placeholder-sun" />
+      <div className="placeholder-mountain" />
+    </div>
+  )
+}
+
 function Hero() {
   return (
     <section className="hp-hero">
-      <h1>Welcome to Reliea's Website</h1>
-      <p>Build, Learn, and Explore.</p>
+      <div className="hp-hero-text">
+        <h1>Welcome to Reliea's Website</h1>
+        <p className="hp-hero-subtitle">
+          Build, Learn, and Explore.
+        </p>
+
+        <p className="hp-hero-description">
+          A personal site about cloud, software, security and my other works.
+        </p>
+      </div>
+
+    <ImagePlaceholder />
+
     </section>
   );
 }

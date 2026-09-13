@@ -6,6 +6,7 @@
   --color-border: #e5e7eb;
   --color-primary: #2563eb;
   --color-header: #87ceeb;
+  --color-bg-subtle: #f8fafc;
 
   /* Typography */
   --font-size-sm: 14px;
@@ -228,6 +229,117 @@ a {
 }
 
 /* ------------------------------
+   shapes
+------------------------------ */
+
+.shape-square {
+  width: 80px;
+  height: 80px;
+
+  background-color: var(--color-border);
+}
+
+.shape-circle {
+  width: 80px;
+  height: 80px;
+
+  background-color: var(--color-border);
+  border-radius: 50%;
+}
+
+.shape-triangle {
+  width: 0;
+  height: 0;
+
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid var(--color-border);
+}
+
+
+/* ------------------------------ 
+   Image Placeholder
+------------------------------ */
+
+.image-placeholder {
+  position: relative;
+
+  width: 100%;
+  min-height: 240px;
+
+  background-color: var(--color-bg-subtle);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.placeholder-sun {
+  /* Layout */
+  position: absolute;
+  top: var(--space-32px);
+  right: var(--space-48px);
+
+  width: 32px;
+  height: 32px;
+
+  /* Style */
+  background-color: var(--color-text-muted);
+  border-radius: 50%;
+}
+
+.placeholder-mountain {
+  /* Layout */
+  position: absolute;
+  bottom: var(--space-32px);
+  left: 50%;
+
+  width: 0;
+  height: 0;
+
+  /* Style */
+  border-left: 64px solid transparent;
+  border-right: 64px solid transparent;
+  border-bottom: 96px solid var(--color-text-muted);
+
+  transform: translateX(-50%);
+}
+
+/* ------------------------------
+   section
+------------------------------ */
+
+.hp-hero {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+
+  gap: var(--space-64px);
+  padding: var(--space-64px) var(--space-48px);
+}
+
+.hp-hero-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-16px);
+}
+
+.hp-hero-text h1,
+.hp-hero-text p {
+  margin: 0;
+}
+
+.hp-hero-subtitle {
+  font-size: var(--font-size-xl);
+}
+
+.hp-hero-description {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+
+/* ------------------------------
    Tablet / Narrow Desktop
 ------------------------------ */
 
@@ -280,7 +392,13 @@ a {
   .hp-footer {
     padding-inline: var(--space-32px);
   }
+
+    .hp-hero {
+    grid-template-columns: 1fr;
+  }
 }
+
+
 
 /* ------------------------------
    Mobile
